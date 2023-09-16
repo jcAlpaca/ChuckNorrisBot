@@ -1,10 +1,11 @@
 import api
 
 def get_response(message: str) -> str:
-    processedMessage = message.lower()
+    p_message = message.lower()
 
-    if processedMessage == '/chucknorrisjoke':
-        joke = Api.get_joke()
+    if p_message == '/chucknorrisjoke':
+        joke = api.get_joke()
         return joke
+
     else:
-        return
+        return ''
